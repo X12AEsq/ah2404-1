@@ -40,9 +40,6 @@ struct MainInterfaceView: View {
                         NavigationLink("Expenses") {
                             SelectVehicleView()
                         }
-                        NavigationLink("Sign Out") {
-                            SignOutView()
-                        }
                     }
                     .navigationTitle("Albers HH 2404")
                 }

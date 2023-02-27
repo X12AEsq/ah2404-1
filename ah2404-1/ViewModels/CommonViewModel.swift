@@ -262,7 +262,8 @@ class CommonViewModel: ObservableObject {
                     print("No causes")
                     return
                 }
-                self.expenses = []
+                self.vehicles = []
+//                print("initialized vehicles")
                 _ = documents.map { queryDocumentSnapshot -> Void in
                     let data = queryDocumentSnapshot.data()
                     self.vehicles.append(Vehicle(
@@ -273,6 +274,7 @@ class CommonViewModel: ObservableObject {
                         year: data["year"] as? Int ?? 0,
                         initialMiles: data["initialMiles"] as? Int ?? 0
                     ))
+//                    print("appended a vehicle")
                     return
                 }
             }
@@ -280,7 +282,7 @@ class CommonViewModel: ObservableObject {
     }
     
     func expenseSubscribe() {
-        print("expenseSubscribe entered")
+//        print("expenseSubscribe entered")
         if expenseListener == nil {
             expenseListener = db.collection("expenses").addSnapshotListener
             { [self] (querySnapshot, error) in
@@ -292,7 +294,7 @@ class CommonViewModel: ObservableObject {
                 self.expenses = []
                 _ = documents.map { queryDocumentSnapshot -> Void in
                     let data = queryDocumentSnapshot.data()
-                    print("appending", data)
+//                    print("appending", data)
                     self.expenses.append(Expense(
                         fsid: queryDocumentSnapshot.documentID,
                         expenseDate: data["expenseDate"] as? String ?? "",

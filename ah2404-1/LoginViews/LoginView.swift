@@ -34,6 +34,7 @@ struct LoginView: View {
                 VStack(spacing: 20) {
                     TextField("Enter Email", text: $email)
                         .modifier(CustomTextField())
+                        .disableAutocorrection(true)
                     SecureField("Enter Password", text: $password)
                         .modifier(CustomTextField())
                         
