@@ -23,7 +23,7 @@ struct ExpenseContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(CVModel.expenses) { expense in
+                ForEach(CVModel.expensesSorted) { expense in
                     if expense.vehicle == vehicle.nickname {
                         NavigationLink {
                             EditExpenseView(vehicle: vehicle, expense: expense)
@@ -45,9 +45,9 @@ struct ExpenseContentView: View {
                 NavigationLink(destination: { EditExpenseView(vehicle: vehicle) }, label: { Text("New Expense") })
             }
             .navigationTitle("Expense?").fontWeight(.regular)
-            .onAppear {
-                print("ExpenseContentView Link appeared", CVModel.expenses)
-            }
+//            .onAppear {
+//                print("ExpenseContentView Link appeared", CVModel.expenses)
+//            }
         }
         .onAppear {
             print("ExpenseContentView appeared", CVModel.expenses)

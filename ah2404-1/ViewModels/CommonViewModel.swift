@@ -22,6 +22,7 @@ class CommonViewModel: ObservableObject {
     
     @Published var vehicles = [Vehicle]()
     @Published var expenses = [Expense]()
+    @Published var expensesSorted = [Expense]()
 
     var vehicleListener: ListenerRegistration?
     var expenseListener: ListenerRegistration?
@@ -305,6 +306,7 @@ class CommonViewModel: ObservableObject {
                         descr: data["expenseDescr"] as? String ?? "",
                         cost: data["expenseCost"] as? String ?? ""
                     ))
+                    self.expensesSorted = expenses.sorted(by: { $0.expenseDate < $1.expenseDate })
                     return
                 }
             }

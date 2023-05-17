@@ -35,6 +35,7 @@
 		311AF19D29A9C2B300F07002 /* ExpenseContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311AF19629A9C2B300F07002 /* ExpenseContentView.swift */; };
 		311AF19E29A9C2B300F07002 /* EditExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311AF19729A9C2B300F07002 /* EditExpenseView.swift */; };
 		311AF19F29A9C2B300F07002 /* VehicleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311AF19829A9C2B300F07002 /* VehicleContentView.swift */; };
+		31CB6B552A15354F00A61DB1 /* TextFieldWithFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CB6B542A15354F00A61DB1 /* TextFieldWithFocus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		311AF19629A9C2B300F07002 /* ExpenseContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseContentView.swift; sourceTree = "<group>"; };
 		311AF19729A9C2B300F07002 /* EditExpenseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditExpenseView.swift; sourceTree = "<group>"; };
 		311AF19829A9C2B300F07002 /* VehicleContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleContentView.swift; sourceTree = "<group>"; };
+		31CB6B542A15354F00A61DB1 /* TextFieldWithFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithFocus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		311AF15829A9BFCF00F07002 /* ah2404-1 */ = {
 			isa = PBXGroup;
 			children = (
+				31CB6B532A15351F00A61DB1 /* Extensions */,
 				311AF17D29A9C20800F07002 /* Enumerations */,
 				311AF17229A9C17A00F07002 /* LoginViews */,
 				311AF18029A9C22E00F07002 /* Models */,
@@ -181,6 +184,14 @@
 				311AF19829A9C2B300F07002 /* VehicleContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		31CB6B532A15351F00A61DB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31CB6B542A15354F00A61DB1 /* TextFieldWithFocus.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				311AF19029A9C28000F07002 /* CommonViewModel.swift in Sources */,
 				311AF18D29A9C26600F07002 /* FormattingService.swift in Sources */,
 				311AF17929A9C1A500F07002 /* CustomTextField.swift in Sources */,
+				31CB6B552A15354F00A61DB1 /* TextFieldWithFocus.swift in Sources */,
 				311AF17829A9C1A500F07002 /* LoginView.swift in Sources */,
 				311AF19A29A9C2B300F07002 /* SelectVehicleView.swift in Sources */,
 				311AF19E29A9C2B300F07002 /* EditExpenseView.swift in Sources */,
